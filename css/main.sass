@@ -1,0 +1,126 @@
+$black: #0D0E13
+$white: #F3F4F4
+$red: #C00B29
+$blue: #2097D4
+$green: #29D247
+$violet: #181A24
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+body,html
+    transition: .3s
+    font-size: 14px
+    font-family: 'Gilroy'
+    background-color: $black
+    color: #fff
+.container
+    max-width: 1240px
+    width: 100%
+    padding: 0px 40px
+    margin: 0px auto
+.navbar
+    margin-top: 25px
+    .nav__content
+        display: flex
+        align-items: center
+        .nav__brand
+            a
+                text-decoration: none
+                img
+                    width: 100%
+        .nav__info
+            display: flex
+            flex-wrap: nowrap
+            margin-left: 28px
+            border: 2px dotted $white
+            border-radius: 24.5px
+            padding: 10px 15px
+            h3
+                font-size: 20px
+                line-height: 24px
+                color: $white
+            .time
+                margin-left: 23px
+.info
+    margin-top: 98px
+    .info__content
+        display: flex
+        justify-content: space-between
+        .info__intro
+            .registration__info
+                transform: rotate(-3.94deg)
+                button
+                    background-color: $red
+                    padding: 15px 20px
+                    border-radius: 36px
+                    color: $white
+                    font-size: 18px
+                    font-weight: 700
+                    text-align: center
+                    border: 0px none
+                    outline: 0px none
+            .info__intro-content
+                margin-top: 20px
+                h1
+                    font-size: 48px
+                    line-height: 58.03px
+                h4
+                    font-size: 24px
+                    line-height: 28.63px
+                    margin-top: 18px
+                p
+                    margin-top: 6px
+                    font-size: 20px
+                    line-height: 23.2px
+                .info__intro-link
+                    margin-top: 48px
+                    .social
+                        padding: 15px 20px
+                        font-size: 18px
+                        border-radius: 55px
+                        cursor: pointer
+                        color: $white
+                        outline: 0px none
+                        text-align: center
+                    .telegram
+                        background-color: $blue
+                    .whatsapp
+                        border: 2px solid $green
+                        background: transparent
+                        margin-left: 21px
+                .gray
+                    text-align: center
+                    font-size: 24px
+                    font-weight: 300
+                    line-height: 27.67px
+                    margin-top: 32px
+.footer__block
+    background-color: $violet
+    padding: 49px 0px
+    .footer__links
+        display: flex
+        justify-content: space-between
+        .footer__block-link
+            h3
+                font-size: 20px
+                line-height: 23.86px
+            p
+                font-size: 16px
+                line-height: 18.83px
+                font-weight: 500
+                margin: 9px 0px
+            .cp
+                margin-top: 34px
+            .license
+                font-size: 14px
+                line-height: 16.48px
+            a
+                text-decoration: none
+                color: #fff
+                font-size: 20px
+                line-height: 23.86px
+                &:nth-child(1)
+                    margin-top: 19px
+.tac
+    text-align: center
