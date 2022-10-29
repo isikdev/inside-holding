@@ -50,6 +50,7 @@ body,html
         .info__intro
             .registration__info
                 transform: rotate(-3.94deg)
+                margin-bottom: 5%
                 button
                     background-color: $red
                     padding: 15px 20px
@@ -75,6 +76,7 @@ body,html
                     line-height: 23.2px
                 .info__intro-link
                     margin-top: 48px
+                    display: flex
                     .social
                         padding: 15px 20px
                         font-size: 18px
@@ -85,10 +87,23 @@ body,html
                         text-align: center
                     .telegram
                         background-color: $blue
+                        &:hover
+                            background: transparent
+                            border: 2px solid $blue
+                            transition: .5s
+                            box-shadow: 0 0 30px $blue
+                        &:not(:hover)
+                            transition: .10s
                     .whatsapp
                         border: 2px solid $green
                         background: transparent
                         margin-left: 21px
+                        &:hover
+                            background: $green
+                            transition: .5s
+                            box-shadow: 0 0 30px $green
+                        &:not(:hover)
+                            transition: .10s
                 .gray
                     text-align: center
                     font-size: 24px
@@ -124,3 +139,58 @@ body,html
                     margin-top: 19px
 .tac
     text-align: center
+@media only screen and (max-width: 1124px)
+    .container
+        max-width: 1124px
+        width: 100%
+        padding: 0px 40px
+        margin: 0px auto
+    .navbar
+        .nav__content
+            justify-content: center
+            flex-direction: column
+
+    .info
+        .info__content
+            display: flex
+            flex-direction: column
+            .info__intro
+                text-align: center
+                .info__intro-link
+                    justify-content: center
+            .info__img
+                margin: 0px auto
+                display: flex
+                justify-content: center
+                width: 100%
+                img
+                    width: 100%
+    .footer__block
+        .footer__links
+            display: flex
+            justify-content: center
+            text-align: center
+            flex-direction: column
+            .footer__block-link
+                margin: 20px auto
+                .cp
+                    margin-top: 0px
+@media only screen and (max-width: 504px)
+    .navbar
+        .nav__content
+            text-align: center
+            .nav__info
+                display: flex
+                flex-direction: column
+                margin-top: 20px
+                .time
+                    margin-left: 0px
+    .info
+        .info__content
+            .info__intro
+                .info__intro-content
+                    .info__intro-link
+                        flex-direction: column
+                        .whatsapp
+                            margin-left: 0px
+                            margin-top: 20px

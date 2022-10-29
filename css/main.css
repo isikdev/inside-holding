@@ -58,6 +58,7 @@ body, html {
 }
 .info .info__content .info__intro .registration__info {
   transform: rotate(-3.94deg);
+  margin-bottom: 5%;
 }
 .info .info__content .info__intro .registration__info button {
   background-color: #C00B29;
@@ -89,6 +90,7 @@ body, html {
 }
 .info .info__content .info__intro .info__intro-content .info__intro-link {
   margin-top: 48px;
+  display: flex;
 }
 .info .info__content .info__intro .info__intro-content .info__intro-link .social {
   padding: 15px 20px;
@@ -102,10 +104,27 @@ body, html {
 .info .info__content .info__intro .info__intro-content .info__intro-link .telegram {
   background-color: #2097D4;
 }
+.info .info__content .info__intro .info__intro-content .info__intro-link .telegram:hover {
+  background: transparent;
+  border: 2px solid #2097D4;
+  transition: 0.5s;
+  box-shadow: 0 0 30px #2097D4;
+}
+.info .info__content .info__intro .info__intro-content .info__intro-link .telegram:not(:hover) {
+  transition: 0.1s;
+}
 .info .info__content .info__intro .info__intro-content .info__intro-link .whatsapp {
   border: 2px solid #29D247;
   background: transparent;
   margin-left: 21px;
+}
+.info .info__content .info__intro .info__intro-content .info__intro-link .whatsapp:hover {
+  background: #29D247;
+  transition: 0.5s;
+  box-shadow: 0 0 30px #29D247;
+}
+.info .info__content .info__intro .info__intro-content .info__intro-link .whatsapp:not(:hover) {
+  transition: 0.1s;
 }
 .info .info__content .info__intro .info__intro-content .gray {
   text-align: center;
@@ -152,4 +171,68 @@ body, html {
 
 .tac {
   text-align: center;
+}
+
+@media only screen and (max-width: 1124px) {
+  .container {
+    max-width: 1124px;
+    width: 100%;
+    padding: 0px 40px;
+    margin: 0px auto;
+  }
+  .navbar .nav__content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .info .info__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .info .info__content .info__intro {
+    text-align: center;
+  }
+  .info .info__content .info__intro .info__intro-link {
+    justify-content: center;
+  }
+  .info .info__content .info__img {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .info .info__content .info__img img {
+    width: 100%;
+  }
+  .footer__block .footer__links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer__block .footer__links .footer__block-link {
+    margin: 20px auto;
+  }
+  .footer__block .footer__links .footer__block-link .cp {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 504px) {
+  .navbar .nav__content {
+    text-align: center;
+  }
+  .navbar .nav__content .nav__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .navbar .nav__content .nav__info .time {
+    margin-left: 0px;
+  }
+  .info .info__content .info__intro .info__intro-content .info__intro-link {
+    flex-direction: column;
+  }
+  .info .info__content .info__intro .info__intro-content .info__intro-link .whatsapp {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
